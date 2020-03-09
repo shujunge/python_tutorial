@@ -1,0 +1,24 @@
+digraph ObjectGraph {
+  node[shape=box, style=filled, fillcolor=white];
+  o140334753684000[fontcolor=red];
+  o140334753684000[label="OBJ\n<__main__.OBJ object at 0x7fa23b249a20>"];
+  o140334753684000[fillcolor="0,0,1"];
+  o94410875011208 -> o140334753684000;
+  o140334729688552 -> o140334753684000 [label="attr_a",weight=2];
+  o94410875011208[label="frame\n/home/zf/Desktop/git_warehouse/pytorch_tutorial/python_profiler/memory_manage.py:17"];
+  o94410875011208[fillcolor="0,0,0.86"];
+  o140334729688552[label="dict\n1 items"];
+  o140334729688552[fillcolor="0,0,0.86"];
+  o140334729681832 -> o140334729688552 [label="__dict__",weight=10];
+  o140334729681832[label="OBJ\n<__main__.OBJ object at 0x7fa239b65ba8>"];
+  o140334729681832[fillcolor="0,0,0.72"];
+  o140334691073768 -> o140334729681832 [label="b",weight=2];
+  o94410875011208 -> o140334729681832;
+  o140334754237320 -> o140334729681832 [label="attr_b",weight=2];
+  o140334691073768[label="dict\n2 items"];
+  o140334691073768[fillcolor="0,0,0.58"];
+  o94410875011208 -> o140334691073768 [label="f_locals",weight=10];
+  o140334754237320[label="dict\n1 items"];
+  o140334754237320[fillcolor="0,0,0.58"];
+  o140334753684000 -> o140334754237320 [label="__dict__",weight=10];
+}
