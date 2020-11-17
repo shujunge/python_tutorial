@@ -105,14 +105,13 @@ bar.load_javascript()
 bar.render_notebook()
 ```
 
-
-
-
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
 </head>
+
+  <!-- 引入 echarts.js -->
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
 <body>
         <div id="9ffa234a64c0457bb2a8894733c0bdfd" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
