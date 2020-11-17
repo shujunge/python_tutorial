@@ -104,20 +104,20 @@ bar.load_javascript()
 ```python
 bar.render_notebook()
 ```
-
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-</head>
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
 
-  <!-- 引入 echarts.js -->
-<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+</head>
 <body>
-        <div id="9ffa234a64c0457bb2a8894733c0bdfd" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="f14769964bd5419faae88e8d7fd1430c" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_9ffa234a64c0457bb2a8894733c0bdfd = echarts.init(
-            document.getElementById('9ffa234a64c0457bb2a8894733c0bdfd'), 'westeros', {renderer: 'svg'});
-        var option_9ffa234a64c0457bb2a8894733c0bdfd = {
+        var chart_f14769964bd5419faae88e8d7fd1430c = echarts.init(
+            document.getElementById('f14769964bd5419faae88e8d7fd1430c'), 'white', {renderer: 'canvas'});
+        var option_f14769964bd5419faae88e8d7fd1430c = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -126,6 +126,32 @@ bar.render_notebook()
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
     "series": [
         {
             "type": "bar",
@@ -164,13 +190,7 @@ bar.render_notebook()
             ],
             "selected": {
                 "\u5546\u5bb6A": true
-            },
-            "show": true,
-            "padding": 5,
-            "itemGap": 10,
-            "itemWidth": 25,
-            "itemHeight": 14,
-            "icon": "circle"
+            }
         }
     ],
     "tooltip": {
@@ -243,135 +263,9 @@ bar.render_notebook()
                 }
             }
         }
-    ],
-    "title": [
-        {
-            "text": "\u4e3b\u6807\u9898",
-            "subtext": "\u526f\u6807\u9898",
-            "padding": 5,
-            "itemGap": 10
-        }
-    ],
-    "toolbox": {
-        "show": true,
-        "orient": "vertical",
-        "itemSize": 15,
-        "itemGap": 10,
-        "left": "90%",
-        "feature": {
-            "saveAsImage": {
-                "type": "jpeg",
-                "backgroundColor": "white",
-                "connectedBackgroundColor": "#fff",
-                "show": true,
-                "title": "\u4fdd\u5b58\u4e3ajpeg",
-                "pixelRatio": 10
-            },
-            "restore": {
-                "show": true,
-                "title": "\u8fd8\u539f"
-            },
-            "dataView": {
-                "show": true,
-                "title": "\u6570\u636e\u89c6\u56fe",
-                "readOnly": false,
-                "lang": [
-                    "\u6570\u636e\u89c6\u56fe",
-                    "\u5173\u95ed",
-                    "\u5237\u65b0"
-                ],
-                "backgroundColor": "#fff",
-                "textareaColor": "#fff",
-                "textareaBorderColor": "#333",
-                "textColor": "#000",
-                "buttonColor": "#c23531",
-                "buttonTextColor": "#fff"
-            },
-            "dataZoom": {
-                "show": true,
-                "title": {
-                    "zoom": "\u533a\u57df\u7f29\u653e",
-                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
-                },
-                "icon": {},
-                "xAxisIndex": false,
-                "yAxisIndex": false,
-                "filterMode": "filter"
-            },
-            "magicType": {
-                "show": true,
-                "type": [
-                    "line",
-                    "bar",
-                    "stack",
-                    "tiled"
-                ],
-                "title": {
-                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
-                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
-                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
-                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
-                },
-                "icon": {}
-            },
-            "brush": {
-                "show": true,
-                "title": {
-                    "zoom": "\u533a\u57df\u7f29\u653e",
-                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
-                },
-                "icon": {},
-                "xAxisIndex": false,
-                "yAxisIndex": false,
-                "filterMode": "filter"
-            }
-        }
-    },
-    "visualMap": {
-        "show": true,
-        "type": "continuous",
-        "min": 0,
-        "max": 100,
-        "inRange": {
-            "color": [
-                "#50a3ba",
-                "#eac763",
-                "#d94e5d"
-            ]
-        },
-        "calculable": true,
-        "inverse": false,
-        "splitNumber": 5,
-        "orient": "vertical",
-        "showLabel": true,
-        "itemWidth": 20,
-        "itemHeight": 140,
-        "borderWidth": 0
-    },
-    "dataZoom": [
-        {
-            "show": true,
-            "type": "slider",
-            "realtime": true,
-            "start": 20,
-            "end": 80,
-            "orient": "vertical",
-            "zoomLock": false,
-            "filterMode": "filter"
-        },
-        {
-            "show": true,
-            "type": "slider",
-            "realtime": true,
-            "start": 20,
-            "end": 80,
-            "orient": "horizontal",
-            "zoomLock": false,
-            "filterMode": "filter"
-        }
     ]
 };
-        chart_9ffa234a64c0457bb2a8894733c0bdfd.setOption(option_9ffa234a64c0457bb2a8894733c0bdfd);
+        chart_f14769964bd5419faae88e8d7fd1430c.setOption(option_f14769964bd5419faae88e8d7fd1430c);
     </script>
 </body>
 </html>
